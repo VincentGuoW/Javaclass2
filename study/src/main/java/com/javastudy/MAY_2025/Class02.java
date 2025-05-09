@@ -7,7 +7,9 @@ public class Class02 {
             e.g. 
                 String sample = "abc";
                 sample.hashcode = 96354;
-        All object has hashcode() method.   
+        All object has hashcode() method.
+        
+        Treecode
                 
          */
 
