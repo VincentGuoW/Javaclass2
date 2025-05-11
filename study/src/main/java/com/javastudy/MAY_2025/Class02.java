@@ -10,7 +10,7 @@ public class Class02 {
         All object has hashcode() method.
         
         Treecode
-                
+             test test   
          */
 
          String sample = "abc";
