@@ -13,6 +13,6 @@ public class Class06 {
         ArrayList<String> girlList = new ArrayList<>();
         Collections.addAll(boyList, "A","B","C","D","E","F","G");
         Collections.addAll(girlList, "Aa","Ba","Ca","Da","Ea","Fa","Ga");
-        Collections.shuffle(studentList);
+        Collections.shuffle(boyList);
     }
 }
