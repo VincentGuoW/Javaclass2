@@ -24,6 +24,7 @@ public class Class01 {
         int size = 0;
         int result = (size++ + 1) * (size++ + 2); //0+1 * 1+2 =3
         System.out.println(result);
+        //test
 
     }
 }
