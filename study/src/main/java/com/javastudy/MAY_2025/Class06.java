@@ -14,5 +14,6 @@ public class Class06 {
         Collections.addAll(boyList, "A","B","C","D","E","F","G");
         Collections.addAll(girlList, "Aa","Ba","Ca","Da","Ea","Fa","Ga");
         Collections.shuffle(boyList);
+        Collections.shuffle(girlList);
     }
 }
