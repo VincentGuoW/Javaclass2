@@ -2,6 +2,7 @@ package com.javastudy.MAY_2025;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class Class07 {
     public static void main(String[] args) {
@@ -12,6 +13,11 @@ public class Class07 {
         Collections.addAll(chanceList, 0,0,0);
         Collections.shuffle(chanceList);
         System.out.println(chanceList.get(0).toString());
+
+        //or use random
+        Random r = new Random();
+        int index = r.nextInt(chanceList.size());
+        System.out.println(chanceList.get(index));
 
         ArrayList<String> boyList = new ArrayList<>();
         ArrayList<String> girlList = new ArrayList<>();
