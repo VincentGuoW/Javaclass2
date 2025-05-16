@@ -20,7 +20,7 @@ public class Class09 {
         for (int i = 0; i < studentNameList.size(); i++) {
             studentMap.put(studentNameList.get(i), 0);
         }
-        //System.out.println(studentMap);
+        //System.out.println(studentMap); TEST TEST
 
 
 
