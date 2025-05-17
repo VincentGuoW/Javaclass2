@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Class08 {
     public static void main(String[] args) {
-        // pick student once, until next roll;
+        // pick student once, until next roll; test
         ArrayList<String> studentList = new ArrayList<>();
         Collections.addAll(studentList, "aa", "bb", "cc", "dd", "ee");
         ArrayList<String> templateList = new ArrayList<>();
