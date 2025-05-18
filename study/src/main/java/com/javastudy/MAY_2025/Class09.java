@@ -54,8 +54,25 @@ public class Class09 {
     }
 
     
-    public static String drawStudent(){
+    public static String drawStudent(HashMap<String,Integer>studentMap){
         String result = "";
+        int studentAmount = studentMap.size();
+        double startWeight = 1.0/studentAmount;
+        double totalWeight = 0.0;
+        Random r = new Random();
+        for(String student : studentMap.keySet()){
+            double weight = startWeight/studentMap.get(student);
+            totalWeight += weight;
+        }
+        double randomeWeight = r.nextDouble()*totalWeight;
+        double weightCheck = 0.0;
+        for(String student : studentMap.keySet()){
+            weightCheck += startWeight/studentMap.get(student);
+            if(weightCheck>randomeWeight){
+                result = student;
+                break;
+            }
+        }
         return  result;
     }
 }
