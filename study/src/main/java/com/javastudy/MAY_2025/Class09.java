@@ -25,11 +25,8 @@ public class Class09 {
 
 
         for (int i = 0; i < 1000; i++) {
-            Random r = new Random();
-            int number= r.nextInt(studentMap.size());
-            String studentName = studentNameList.get(number);
-            Integer pickedTimes = studentMap.get(studentName)+1;
-            studentMap.replace(studentName, pickedTimes);
+            String studentNamePicked = drawStudent(studentMap);
+            studentMap.put(studentNamePicked, studentMap.get(studentNamePicked)+1);
         }
         System.out.println(studentMap);
         
@@ -61,13 +58,13 @@ public class Class09 {
         double totalWeight = 0.0;
         Random r = new Random();
         for(String student : studentMap.keySet()){
-            double weight = startWeight/studentMap.get(student);
+            double weight = startWeight / (studentMap.get(student) + 1.0);
             totalWeight += weight;
         }
         double randomeWeight = r.nextDouble()*totalWeight;
         double weightCheck = 0.0;
         for(String student : studentMap.keySet()){
-            weightCheck += startWeight/studentMap.get(student);
+            weightCheck += startWeight / (studentMap.get(student) + 1.0);
             if(weightCheck>randomeWeight){
                 result = student;
                 break;
