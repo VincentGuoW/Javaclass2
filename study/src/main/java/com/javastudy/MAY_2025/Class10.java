@@ -2,6 +2,7 @@ package com.javastudy.MAY_2025;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.StringJoiner;
 
 public class Class10 {
     public static void main(String[] args) {
@@ -42,10 +43,11 @@ public class Class10 {
 
         for(String province : provinceHashMap.keySet()){
             ArrayList<String> city = provinceHashMap.get(province);
-            System.out.println("Province == " + province + " ~~~~~~~");
+            StringJoiner sj = new StringJoiner(" , ","","");
             for (int i = 0; i < city.size(); i++) {
-                System.out.println(city.get(i));
+                sj.add(city.get(i));
             }
+            System.out.println( province + " = " + sj);
             
         }
     }
