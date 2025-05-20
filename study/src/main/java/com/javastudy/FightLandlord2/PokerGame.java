@@ -33,7 +33,7 @@ public class PokerGame {
 
     public PokerGame(){
         //Better use treeset; it will make in in order!!
-        //
+        //test
         cardIDList = new ArrayList<>(card.keySet());
         Collections.shuffle(cardIDList);
 
