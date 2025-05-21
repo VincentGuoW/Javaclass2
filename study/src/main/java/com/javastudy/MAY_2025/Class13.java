@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Class13 {
     public static void main(String[] args) {
         /*
-        Stream method
+         * Stream method
          */
 
         ArrayList<String> list1 = new ArrayList<>();
@@ -16,6 +16,27 @@ public class Class13 {
         list1.add("acdfae");
         list1.add("aje");
         list1.add("acdfae");
-        list1.stream().filter(name->name.startsWith("a")).filter(name->name.length()==3).forEach(name->System.out.println(name));
+        list1.stream().filter(name -> name.startsWith("a"))
+                      .filter(name -> name.length() == 3)
+                      .forEach(name -> System.out.println(name));
+
+        //Classic for loop method
+        ArrayList<String> list2 = new ArrayList<>();
+        for (String name : list1) {
+            if (name.startsWith("a")) {
+                list2.add(name);
+            }
+        }
+        ArrayList<String> list3 = new ArrayList<>();
+        for (String name : list2) {
+            if (name.length()==3) {
+                list3.add(name);
+            }
+        }
+        for (String name : list3) {
+            System.out.println(name);
+        }
+
+        
     }
 }
