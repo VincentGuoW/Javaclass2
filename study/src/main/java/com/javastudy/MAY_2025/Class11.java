@@ -26,5 +26,12 @@ public class Class11 {
         for (String k : keys) {
             System.out.println(k + " ==> " + map.get(k));
         }
+
+        Map.of();
+        //There's limit for map.of() ==> max 10!!!
+        //E.g.
+        // public static<k,v> void of(k...keys,v...values)
+        //Will cus error, they can't define which part is keys or values
+        
     }
 }
