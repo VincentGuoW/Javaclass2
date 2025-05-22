@@ -1,12 +1,11 @@
 package com.javastudy.MAY_2025.Stream;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.function.Predicate;
 
 public class StreamDemo3 {
     public static void main(String[] args) {
-        //Functional interface has one and only abstract method
+        //Functional interface has one and only abstract method !
         ArrayList<String> list = new ArrayList<>();
         list.add("aa");
         list.add("eb");
