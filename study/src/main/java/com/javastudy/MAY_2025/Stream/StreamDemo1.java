@@ -10,10 +10,10 @@ import java.util.stream.Stream;
 public class StreamDemo1 {
     public static void main(String[] args) {
         /*
-            single list : default Stream<E> stream()
-            double list :
-            array: public static <T> Stream<T> Stream(T[] array)
-            value: public static <T> Stream<T> of(T...values)
+            single list : default Stream<E> stream()                ==> Under Collection
+            double list : HashMap                                   ==> Entry/key Under Set
+            array: public static <T> Stream<T> Stream(T[] array)    ==> Under Arrays
+            value: public static <T> Stream<T> of(T...values)       ==>
          
         */
 
