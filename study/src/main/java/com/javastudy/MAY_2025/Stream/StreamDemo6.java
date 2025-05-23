@@ -9,6 +9,8 @@ import java.util.stream.Stream;
 
 public class StreamDemo6 {
     public static void main(String[] args) {
+        System.out.println("-------------------------------s");
+
         ArrayList<String> list1 = new ArrayList<>();
         Collections.addAll(list1, "aa","b","d","e","fa","u");
 
@@ -55,5 +57,11 @@ public class StreamDemo6 {
             
         });
         System.out.println(Arrays.toString(arrList));
+
+        System.out.println("-------------------------------s");
+
+
+        String[] arr2 = list3.stream().toArray(s->new String[s]);
+        System.out.println(Arrays.toString(arr2));
     }
 }
