@@ -63,6 +63,6 @@ public class StreamDemo6 {
 
         String[] arr2 = list3.stream().toArray(s->new String[s]);
         System.out.println(Arrays.toString(arr2));
-        //t
+        //
     }
 }
