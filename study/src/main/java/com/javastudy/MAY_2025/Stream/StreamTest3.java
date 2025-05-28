@@ -67,7 +67,7 @@ public class StreamTest3 {
         }));
     
     }
-
+    //actor class
     public class Actor{
     String name;
     Integer age;
