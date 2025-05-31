@@ -52,7 +52,7 @@ public class StreamTest3 {
 
                 @Override
                 public String apply(String t) {
-                    // TODO Auto-generated method stub test
+                    // TODO Auto-generated method stub test test
                     throw new UnsupportedOperationException("Unimplemented method 'apply'");
                 }
             
@@ -60,7 +60,7 @@ public class StreamTest3 {
 
             @Override
             public String apply(String t) {
-                // TODO Auto-generated method stub test
+                // TODO Auto-generated method stub test test
                 throw new UnsupportedOperationException("Unimplemented method 'apply'");
             }
             
