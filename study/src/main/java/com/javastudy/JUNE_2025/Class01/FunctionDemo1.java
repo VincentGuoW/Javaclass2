@@ -7,7 +7,7 @@ public class FunctionDemo1 {
     public static void main(String[] args) {
         Integer[] arr = {15,21,3,51,7,4,9};
 
-        //Anonymous Inner Class
+        //Anonymous Inner Class 1
         Arrays.sort(arr,new Comparator<Integer>() {
 
             @Override
