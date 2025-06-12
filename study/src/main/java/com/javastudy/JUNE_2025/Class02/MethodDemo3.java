@@ -1,4 +1,4 @@
-package com.javastudy.June_2025;
+package com.javastudy.June_2025.Class02;
 
 import java.util.ArrayList;
 import java.util.Collections;
