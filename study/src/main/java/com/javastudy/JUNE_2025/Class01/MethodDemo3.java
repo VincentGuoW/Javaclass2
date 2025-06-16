@@ -12,7 +12,7 @@ public class MethodDemo3 {
          */
 
         // 1. Arraylist with following: "Sam", "Tom", "Henry","Tommy","Toby"
-        // 2. Only keep name start with "T" & lengh <=3;//test 
+        // 2. Only keep name start with "T" & lengh <=3;//test test test
 
         ArrayList<String> nameList = new ArrayList<>();
         Collections.addAll(nameList, "Sam", "Tom", "Henry", "Tommy", "Toby");
