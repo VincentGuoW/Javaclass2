@@ -1,4 +1,4 @@
-package com.javastudy.June_2025.Class02;
+package com.javastudy.JUNE_2025.Class02;
 
 public class StringOperation {
     public static  boolean test(String s ){
