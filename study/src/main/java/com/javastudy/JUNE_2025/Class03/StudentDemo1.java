@@ -15,7 +15,7 @@ public class StudentDemo1 {
          * return new CollectorImpl<>(ArrayList::new, List::add,
          * (left, right) -> { left.addAll(right); return left; },
          * CH_ID);
-         * 
+         * test
          */
     }
 }
