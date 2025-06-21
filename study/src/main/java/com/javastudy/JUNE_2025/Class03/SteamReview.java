@@ -7,6 +7,9 @@ import java.util.Collections;
 
 public class SteamReview {
     public static void main(String[] args) {
+        //Use method 
+        //super::method1;
+        //this::method1;
         ArrayList<String> list = new ArrayList<>();
         Collections.addAll(list, "TOM", "HENRY", "TONNY", "TOBY", "SAM", "LEE");
         list.stream()
