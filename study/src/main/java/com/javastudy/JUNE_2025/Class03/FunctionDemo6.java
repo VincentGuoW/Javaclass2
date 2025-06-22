@@ -11,6 +11,7 @@ public class FunctionDemo6 {
         Collections.addAll(list, "1","123","234","3");
         
         //list.stream().map(Integer::parseInt).forEach(System.out::println);
+        //
         Integer[] resultArray = list.stream().map(Integer::parseInt).toArray(new IntFunction<Integer[]>() {
 
             @Override
