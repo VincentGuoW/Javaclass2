@@ -9,7 +9,7 @@ public class Exercise3 {
         /*
          * Create student list with name and age
          * put student "name-age" as string into array
-         * as the above form
+         * 
          */
 
          ArrayList<Student> list = new ArrayList<>();
