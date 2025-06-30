@@ -13,6 +13,6 @@ public class ErrorAndException1 {
         String name = arr[0].getName(); // arr[0] = null  ==> Null Pointer Exception
         System.out.println(name);
         
-        //ctrl + click for exception line;
+        //ctrl + click for exception line
      }
 }
