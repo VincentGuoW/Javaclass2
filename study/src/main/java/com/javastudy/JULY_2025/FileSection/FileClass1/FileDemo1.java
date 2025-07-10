@@ -5,6 +5,7 @@ import java.io.File;
 public class FileDemo1 {
     public static void main(String[] args) {
         //url will just be String if not use it as url
+        //test
         String str = "D:\\Vincent\\JavaClass\\study\\src\\main\\java\\com\\javastudy\\JULY_2025\\FileSection\\FileClass1\\a.txt";
         File f1 = new File(str);
         System.out.println(f1);
