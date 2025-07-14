@@ -21,6 +21,9 @@ public class IOInputDemo {
         //System.out.println(sb.toString());
         String text = new String(byteArr);
         System.out.println(text);
+
+
+        System.out.println(fis.read());//if empty == -1 !!!!!!
         fis.close();
     }
 }
