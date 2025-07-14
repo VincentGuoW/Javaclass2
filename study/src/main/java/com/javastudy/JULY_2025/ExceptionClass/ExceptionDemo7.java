@@ -1,39 +1,22 @@
-package com.javastudy.JULY_2025;
+package com.javastudy.JULY_2025.ExceptionClass;
+
 
 public class ExceptionDemo7 {
     public static void main(String[] args) {
-        int[] arr = null;
-        int max = 0;
+        System.out.println();
+        int[] arr = { 1, 23, 4, 5, 6 }; 
         try {
-             max = getMax(arr);
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-            System.out.println("Null in main");
-            e.getStackTrace();
-            max++;
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println(e.getMessage());
-            System.out.println("Out Bounds in main");
-            e.getStackTrace();
-            max++;
-        }
-
-        System.out.println(max);
-    }
-
-    public static int getMax(int[] arr) throws NullPointerException, ArrayIndexOutOfBoundsException {
-        if (arr == null) {
-            throw new NullPointerException("null inside getMax");
-        }
-        System.out.println("Check is it go through");
-
-        if (arr.length == 0) {
-            throw new ArrayIndexOutOfBoundsException("out bounds inside getMax");
-        }
-        int max = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            max = arr[i];
-        }
-        return max;
+            System.out.println(arr[10]); 
+            System.out.println(2 / 0);
+        } catch (ArrayIndexOutOfBoundsException e) { 
+            System.out.println("-----------------");
+            System.out.println(e.getMessage()); 
+            System.out.println("-----------------");
+            System.out.println(e.toString()); 
+            System.out.println("-----------------");
+            e.printStackTrace();
+        } 
+        System.out.println("-----End-----"); 
+        //System.err.println(123);
     }
 }
