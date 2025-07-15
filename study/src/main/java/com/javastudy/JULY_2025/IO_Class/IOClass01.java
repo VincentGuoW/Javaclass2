@@ -1,4 +1,4 @@
-package com.javastudy.IO_Class;
+package com.javastudy.JULY_2025.IO_Class;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
