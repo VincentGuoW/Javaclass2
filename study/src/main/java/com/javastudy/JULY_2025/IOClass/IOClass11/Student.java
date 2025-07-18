@@ -7,7 +7,8 @@ public class Student implements Serializable {
     private int age;
     private String name;
     private String test;
-    private String test2;
+
+    private transient String password;
 
     public Student() {
     }
