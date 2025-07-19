@@ -1,8 +1,9 @@
 package com.javastudy.JULY_2025.IOClass.IOClass11;
 
 import java.io.NotSerializableException;
+import java.io.Serializable;
 
-public class Student extends NotSerializableException {
+public class Student implements Serializable {
     private int age;
     private String name;
     public Student() {
