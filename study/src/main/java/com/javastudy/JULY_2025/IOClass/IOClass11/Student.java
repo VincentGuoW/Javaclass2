@@ -4,6 +4,7 @@ import java.io.NotSerializableException;
 import java.io.Serializable;
 
 public class Student implements Serializable {
+    //use implements Serializable!!
     private int age;
     private String name;
     public Student() {
