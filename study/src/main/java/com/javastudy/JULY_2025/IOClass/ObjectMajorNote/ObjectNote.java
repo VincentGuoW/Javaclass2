@@ -22,7 +22,8 @@ public class ObjectNote {
          * ==>So we don't need to worry about how many object we put in.
          * 
          * 
-         * 
+         * Steam ==> OutputSteam/InputStream 字节
+         * Writer ==> PrintWriter/PrinterReader 字符
          * 
          * 
          */
