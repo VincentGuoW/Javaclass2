@@ -18,6 +18,10 @@ public class ObjectMainTest {
         Student s4 = new Student(25, "Jack", "Crying");
 
         ArrayList<Student> studentArr = new ArrayList<>();
+        // @java.io.Serial
+        // private static final long serialVersionUID = 8683452581122892189L;
+
+        //
         studentArr.add(s1);
         studentArr.add(s2);
         studentArr.add(s3);
@@ -32,5 +36,6 @@ public class ObjectMainTest {
         for (Student student : resultArr) {
             System.out.println(student);
         }
+        ois.close();
     }
 }
