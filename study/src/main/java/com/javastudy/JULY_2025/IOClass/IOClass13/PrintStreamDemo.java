@@ -8,9 +8,9 @@ import java.io.UnsupportedEncodingException;
 public class PrintStreamDemo {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         PrintStream ps = new PrintStream(
-                "study\\src\\main\\java\\com\\javastudy\\JULY_2025\\IOClass\\IOClass13\\test.txt");
+                "study\\src\\main\\java\\com\\javastudy\\JULY_2025\\IOClass\\IOClass13\\TestFile\\test.txt");
         PrintStream ps2 = new PrintStream(
-                new FileOutputStream("study\\src\\main\\java\\com\\javastudy\\JULY_2025\\IOClass\\IOClass13\\test.txt"),
+                new FileOutputStream("study\\src\\main\\java\\com\\javastudy\\JULY_2025\\IOClass\\IOClass13\\TestFile"),
                 true, "UTF-8");
         // Auto flash ==> memory full / xxx.close() ==> then put data in
         ps.print("A");
