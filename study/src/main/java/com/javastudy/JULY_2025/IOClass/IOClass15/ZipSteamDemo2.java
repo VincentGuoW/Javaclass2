@@ -28,7 +28,8 @@ public class ZipSteamDemo2 {
                 // toString() ==> "images/icons/logo.png"
                 // getName() ==> "logo.png"
                 // ===============================
-                creatFolder.mkdir();
+                creatFolder.mkdirs();// use mkdirs not mkdir (end with '/' or not)
+                // prevent some zip file end with "xxx/xxx/"
                 // creatFile ==> creatFile.mkdir();
             } else {
                 File creatFile = new File(targetLocation, ZEntry.toString());
@@ -38,10 +39,27 @@ public class ZipSteamDemo2 {
                 int b;
                 while ((b = zis.read()) != -1) {
                     fos.write(b);
+                    /*
+                     * why write() not writeObject() / PrintWriter() / ObjectOutputSteam()
+                     * write()
+                     * ==>copy byte, most common way to copy file
+                     * 
+                     * writeObject()
+                     * ==>Need"Serializable" , can't use on .txt / .png file
+                     * 
+                     * PrintWriter()
+                     * ==>use for write string, not copy byte file E.g. picture
+                     * 
+                     * ObjectOutputSteam()
+                     * ==>use on java
+                     */
                 }
                 fos.close();
+                zis.closeEntry();// Last file, no folder, entire entry done
+
             }
 
         }
+        zis.close();// close after everything is done.
     }
 }
