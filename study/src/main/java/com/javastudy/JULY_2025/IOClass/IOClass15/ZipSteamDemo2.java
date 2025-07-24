@@ -27,6 +27,7 @@ public class ZipSteamDemo2 {
                 // Must use toString, not get name==> we need the root
                 // toString() ==> "images/icons/logo.png"
                 // getName() ==> "logo.png"
+                // ===============================
                 creatFolder.mkdir();
                 // creatFile ==> creatFile.mkdir();
             } else {
