@@ -1,6 +1,7 @@
 package com.javastudy.JULY_2025.IOClass.IOClass17;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,11 +17,29 @@ public class ZipDemo2 {
 
         ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(zipFolder));
 
+        String startFolderName = inputFolder.getName();
+        zipTheFolder(inputFolder, zos, startFolderName);
+
         zos.close();
     }
 
-    public static void zipTheFolder(File inputFolder, ZipOutputStream zos, String name) {
-        ZipEntry ze = new ZipEntry(inputFolder.getName());
+    public static void zipTheFolder(File inputFolder, ZipOutputStream zos, String startFolderName) throws IOException {
+        File[] files = inputFolder.listFiles();
+        for (File file : files) {
+            if (file.isFile()) {
+                ZipEntry ze = new ZipEntry(startFolderName + "\\" + file.getName());
+                zos.putNextEntry(ze);
+                FileInputStream fis = new FileInputStream(file);
+                int b;
+                while ((b = fis.read()) != -1) {
+                    zos.write(b);
+                }
+                fis.close();
+                zos.closeEntry();
+            } else {
+                zipTheFolder(file, zos, startFolderName + "\\" + file.getName());
+            }
+        }
 
     }
 
