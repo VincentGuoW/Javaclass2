@@ -28,8 +28,9 @@ public class ZipDemo2 {
         for (File file : files) {
             if (file.isFile()) {
                 ZipEntry ze = new ZipEntry(startFolderName + "\\" + file.getName());
-                zos.putNextEntry(ze);
+                zos.putNextEntry(ze);   //start write into the zipentry
                 FileInputStream fis = new FileInputStream(file);
+                //Open another stream
                 int b;
                 while ((b = fis.read()) != -1) {
                     zos.write(b);
