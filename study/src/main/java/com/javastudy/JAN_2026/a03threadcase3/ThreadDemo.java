@@ -16,7 +16,7 @@ public class ThreadDemo {
         FutureTask<Integer> ft2 = new FutureTask<>(mc2);
         //create thread(runnable) to get ready to do
         Thread t1 = new Thread(ft1);
-        Thread t2 = new Thread(ft2);
+        Thread t2 = new Thread(ft2,"Thread 2");
         //start thread to do each of them, where it start working
         t1.start();
         t2.start();
