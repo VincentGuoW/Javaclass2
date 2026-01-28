@@ -6,7 +6,7 @@ public class YieldDemo {
         MyThead mt2 = new MyThead();
         mt1.setName("T1");
         mt2.setName("T2");
-        mt1.start();
+        mt1.start();//will proved diff yield
         mt2.start();
     }
 
