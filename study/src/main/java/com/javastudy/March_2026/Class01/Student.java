@@ -17,6 +17,15 @@ public class Student {
         this.name = name;
     }
 
+    protected Student(int age){
+        this.age = age;
+    }
+
+    private Student(String name,int age){
+        this.name=name.split(",")[0];
+        this.age = Integer.parseInt(name.split(",")[1]);
+    }
+
     public String getName() {
         return name;
     }
